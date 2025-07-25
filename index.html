@@ -11,7 +11,24 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+        <h1>Loading CRUD React Pagination...</h1>
+        <p>If this message persists, there may be a JavaScript error. Please check the browser console.</p>
+      </div>
+    </div>
+    <script>
+      // Debug script to help troubleshoot loading issues
+      window.addEventListener('load', function() {
+        console.log('Page loaded successfully');
+        console.log('Root element:', document.getElementById('root'));
+      });
+      
+      // Error handling
+      window.addEventListener('error', function(e) {
+        console.error('Global error:', e.error);
+      });
+    </script>
   </body>
 
 </html>
